@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <label for="id_nombre">Indique su nombre</label>
+
+      <input
+        type="text"
+        required
+        autocomplete="additional-name"
+        autofocus
+        name="nombre"
+        id="id_nombre"
+        placeholder="Nombre"
+      />
+    </p>
+    <p>
+        <label for="id_apellidos">Indique sus apellidos</label>
+  
+        <input
+          type="text"
+          required
+          name="apellidos"
+          id="id_apellidos"
+          placeholder="apellidos"
+        />
+      </p>
+      <p>
+        <label for="id_date">Indicame tu fecha de nacimiento(mayor 18 años)</label>
+        <input
+          type="date"
+          required
+          name="fecha"
+          id="id_date"
+          placeholder="fecha"
+        />
+      </p>
+      <p>
+        <label for = "id_provinicia">¿Cual es su provincia?</label>
+        <input 
+        type = "text" required 
+        id = "id_provincia" 
+        name = "provincia" 
+        placeholder="Provincia"
+        list = "listaprovincias">
+        <datalist id = "listaprovincias">
+            <option>Madrid</option>
+            <option>Barcelona</option>
+            <option>Málaga</option>
+            <option>Sevilla</option>
+            <option>Asturias</option>
+            <option>Badajoz</option>
+            <option>Guadalajara</option>
+            <option>Salamanca</option>
+            <option>Cáceres</option>
+            <option>Huelva</option>
+            <option>I. Baleares</option>
+        </datalist>
+    </p>
+    <p>
+      <label for="id_email">Introducir email</label>
+      <input
+        type="email"
+        required
+        name="email"
+        id="id_email"
+        placeholder="email"
+      />
+    
+    </p>
+    
+    <p>
+        <label for="id_pass">Contraseña</label>
+
+        <input
+          type="password"
+          required="password"
+          name="pass"
+          minlength="8"
+          placeholder="Minimo 8 carácteres"
+          id="id_pass"
+        />
+      </p>
+      <p>
+        <label for="id_pass">Repetir Contraseña</label>
+
+        <input
+          type="password"
+          required="password"
+          name="pass2"
+          minlength="8"
+          placeholder="repita contraseña"
+          id="id_pass2"
+        />
+      </p>
+    <p>
+      <label for="id_color">Indicame tu color favorito</label>
+      <input
+        type="color"
+        required
+        name="color"
+        id="id_color"
+        placeholder="Color"
+      />
+    </p>
+    <p>
+      <label for="id_datetimelocal"
+        >Indique la hora y fecha que desea para su cita</label>
+      <input
+        type="datetime-local"
+        required
+        name="datetimelocal"
+        id="id_datetimelocal"
+        placeholder="datetimelocal"
+      />
+    </p>
+    <p>
+      <label for = "id_satisfacción">¿Cual es su nivel de satisfacción con la empresa?(1-10)</label>
+      <input 
+      type = "number"
+      placeholder="valoración"
+      min = "1" 
+      max = "10" 
+      step = "1" 
+      id = "id_satisfacción"
+      name = "numero"
+      required pattern = "\d+"
+      />
+  </p>
+  <p>
+    <label for="id_archivo">Introduzca imagen de su DNI</label>
+    <input
+    type="file"
+    required
+    />
+  </p>
+  <p>
+    Progreso:
+  <progress 
+    max="100"
+    value="45">
+  </progress>
+  </p>
+
+    
+  </body>
+</html>
